@@ -6,7 +6,7 @@ const userName = document.getElementById('name');
 const button = document.getElementById('submit');
 const clean = document.getElementById('remove')
 
-// Chiedo all'utente chilometri ed età
+// Chiedo all'utente nome, chilometri ed età
 button.addEventListener('click', function () {
     event.preventDefault();
     const name = userName.value;
