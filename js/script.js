@@ -4,7 +4,8 @@ const userAge = document.getElementById('userage');
 const distance = document.getElementById('distance');
 const userName = document.getElementById('name');
 const button = document.getElementById('submit');
-const clean = document.getElementById('remove')
+const clean = document.getElementById('remove');
+const ticketSection = document.getElementById('ticketsection')
 
 // Chiedo all'utente nome, chilometri ed età
 button.addEventListener('click', function () {
@@ -88,6 +89,9 @@ button.addEventListener('click', function () {
         document.getElementById('cabin').innerText = randomCar;
         document.getElementById('cpcode').innerText = randomCp;
         document.getElementById('result').innerText = message;
+
+        // Faccio comparire il biglietto
+        ticketSection.classList.remove('d-none');
 
     }
 })
