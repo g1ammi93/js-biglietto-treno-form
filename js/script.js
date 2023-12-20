@@ -10,7 +10,7 @@ const ticketSection = document.getElementById('ticketsection')
 // Chiedo all'utente nome, chilometri ed età
 button.addEventListener('click', function () {
     event.preventDefault();
-    const name = userName.value;
+    const name = userName.value.trim();
     console.log(name)
     const km = parseInt(distance.value)
     console.log(km)
